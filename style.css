@@ -1,0 +1,95 @@
+body {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    239deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(15, 137, 138, 0.4610176834405637) 0%,
+    rgba(98, 255, 234, 0.6486927534685749) 20%,
+    rgba(255, 0, 140, 0.2201213248971463) 51%,
+    rgba(234, 238, 165, 1) 75%,
+    rgba(70, 252, 184, 0.6486927534685749) 86%
+  );
+}
+.container-fluid {
+  background-image: url(./images/corner-rose-image.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 250px;
+}
+.section {
+  height: 500px;
+  background: url(./images/bg-black-rose-img.jpeg) no-repeat center/576px;
+  background-size: cover;
+}
+.section .item-1 {
+  height: 500px;
+  width: 350px;
+}
+.section .item-2 {
+  padding: 50px;
+  width: 400px;
+  height: 500px;
+  margin-top: 170px;
+
+  color: aliceblue;
+  background-color: coral;
+}
+footer {
+  margin-top: 250px;
+}
+button:hover {
+  background-color: crimson !important;
+  transition: 2s;
+}
+.i-con {
+  color: black;
+}
+.i-con:hover {
+  color: crimson;
+  transition: 2s;
+
+  transition: all 2s;
+}
+@media screen and (max-width: 992px) and (min-width: 577px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .section .item-1 {
+    position: absolute;
+    left: 150px;
+  }
+  section .item-2 {
+    position: absolute;
+    right: 150px;
+
+    padding: 0;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 576px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  body {
+    background-image: none;
+  }
+  .section {
+    height: auto;
+  }
+  .section .item-1 {
+    width: auto;
+    margin: 0 auto;
+  }
+  .section .item-2 {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  footer {
+    margin-top: 50px;
+  }
+}
